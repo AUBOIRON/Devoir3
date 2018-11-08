@@ -1,10 +1,10 @@
 <?php
 
-class Model_Activites extends CI_Model
+class Model_Accueil extends CI_Model
 {
-    public function getAllActivites()
+    public function getAllRegions()
     {
-        $sql = $this->db->get('activite');
+        $sql = $this->db->get('region');
         foreach ($sql->result() as $row)
         {
             $data[] = $row;
